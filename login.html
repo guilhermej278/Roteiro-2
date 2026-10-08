@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | Burgergo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-guest-only="1">
+<header><div class="wrap">
+<a class="logo" href="index.html">Burgergo</a>
+<nav aria-label="Principal">
+<a href="index.html">Início</a>
+<a href="cardapio.html">Cardápio</a>
+<a href="pedido.html">Pedido</a>
+<a href="login.html" aria-current="page" data-guest>Login</a>
+<a href="cadastro.html" data-guest>Criar conta</a>
+</nav>
+</div></header>
+<section><div class="wrap narrow">
+<h2>Entrar</h2>
+<form id="log">
+<label for="email">E-mail</label><input id="email" type="text" required autocomplete="username">
+<label for="senha">Senha</label><input id="senha" type="password" required autocomplete="current-password">
+<p style="margin-top:20px"><button class="btn" type="submit">Entrar</button></p>
+<div class="err" id="err" role="alert"></div>
+<div class="ok" id="ok" role="status"></div>
+</form>
+<p style="margin-top:22px">Ainda não tem conta? <a href="cadastro.html"><b>Criar conta</b></a></p>
+</div></section>
+<script src="script.js"></script>
+</body>
+</html>

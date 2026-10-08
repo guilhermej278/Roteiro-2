@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedido | Burgergo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="index.html">Burgergo</a>
+<nav aria-label="Principal">
+<a href="index.html">Início</a>
+<a href="cardapio.html">Cardápio</a>
+<a href="pedido.html" aria-current="page">Pedido</a>
+<a href="login.html" data-guest>Login</a>
+<a href="cadastro.html" data-guest>Criar conta</a>
+</nav>
+</div></header>
+<section><div class="wrap narrow">
+<div>
+<h2>Faça seu pedido</h2>
+<div class="ok" id="aviso">Para pedir, você precisa estar logado. <a href="login.html">Entrar</a> ou <a href="cadastro.html">criar conta</a>.</div>
+<form id="f">
+<label for="s">Hambúrguer</label>
+<select id="s"><option>Hambúrguer Grande</option><option>Hambúrguer Pequeno</option></select>
+<div class="two">
+<div><label for="q">Quantidade</label><input id="q" type="number" min="1" max="10" value="1" required></div>
+<div><label for="b">Batata frita?</label><select id="b"><option>Não</option><option>Sim</option></select></div>
+</div>
+<label for="n">Seu nome</label><input id="n" required>
+<label for="e">Endereço de entrega</label><input id="e" required>
+<p style="margin-top:20px"><button class="btn" type="submit">Enviar pedido</button></p>
+<div class="ok" id="ok" role="status"></div>
+</form>
+</div>
+</div></section>
+<script src="script.js"></script>
+</body>
+</html>
